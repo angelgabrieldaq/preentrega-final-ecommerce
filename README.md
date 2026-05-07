@@ -43,8 +43,7 @@ proyecto-final-ecommerce-tu-nombre/
 Los mensajes se envían a través de Formspree. Cada envío genera un email de confirmación.
 
 ## Autor
-Ángel Acuña
-6º año, Universidad de Buenos Aires
+Angel Acuña
 
 ## Próximos Pasos
 - Agregar más productos
