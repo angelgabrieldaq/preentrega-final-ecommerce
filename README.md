@@ -18,12 +18,11 @@ Sitio web de e-commerce con sección de productos, reseñas de clientes y formul
 - **Formspree**: Formulario de contacto
 
 ## Estructura del Proyecto
-```
-proyecto-final-ecommerce-tu-nombre/
+
+proyecto-final-ecommerce/
 ├── index.html
 ├── styles.css
 ├── README.md
-```
 
 ## Cómo Usar
 1. Clonar o descargar el repositorio
@@ -31,7 +30,7 @@ proyecto-final-ecommerce-tu-nombre/
 3. El sitio es completamente responsive — probá en celular y computadora
 
 ## Layouts Usados
-- **Productos**: Flexbox con `flex-wrap: wrap` para adaptabilidad
+- **Productos**: Flexbox con `flex-direction: column` para columna vertical
 - **Reseñas**: CSS Grid con 3 columnas (1 columna en móvil)
 - **Formulario**: Flexbox centrado
 
