@@ -3,97 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi E-commerce</title>
+    <title>Zenoxia | Soluciones SaaS para Gestión Hospitalaria</title>
+    <meta name="description" content="Zenoxia - Software especializado para optimizar procesos en quirófanos, urgencias, cuidado materno-fetal y reumatología.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Mi Tienda</h1>
-        <p>Productos de calidad</p>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#resenas">Reseñas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Zenoxia</h1>
+                <p class="tagline">Software médico para optimizar procesos hospitalarios</p>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#resenas">Reseñas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!-- MAIN CONTENT -->
     <main>
-        <section id="inicio" class="inicio">
-            <h2>Bienvenido</h2>
-            <p>Aquí encontrarás los mejores productos al mejor precio.</p>
+        <!-- HERO SECTION -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Transformar la gestión hospitalaria con tecnología</h2>
+                <p>Soluciones SaaS especializadas para quirófanos, urgencias, maternidad y especialidades médicas. Aumenta eficiencia, cumplimiento normativo y calidad de atención.</p>
+                <a href="#productos" class="cta-button">Ver soluciones</a>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-placeholder">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="20" y="20" width="160" height="160" fill="none" stroke="#0066cc" stroke-width="2" rx="8"/>
+                        <rect x="40" y="40" width="120" height="120" fill="none" stroke="#0066cc" stroke-width="1.5" rx="6"/>
+                        <circle cx="100" cy="70" r="15" fill="#0066cc" opacity="0.3"/>
+                        <line x1="70" y1="100" x2="130" y2="100" stroke="#0066cc" stroke-width="2"/>
+                        <line x1="70" y1="130" x2="130" y2="130" stroke="#0066cc" stroke-width="2" opacity="0.6"/>
+                        <line x1="70" y1="145" x2="130" y2="145" stroke="#0066cc" stroke-width="1.5" opacity="0.4"/>
+                    </svg>
+                </div>
+            </div>
         </section>
 
+        <!-- SECCIÓN DE PRODUCTOS (FLEXBOX) -->
         <section id="productos" class="productos">
-            <h2>Productos</h2>
-            <div class="grid-productos">
-                <div class="card">
-                    <img src="https://via.placeholder.com/250x200?text=Producto+1" alt="Producto 1">
-                    <h3>Producto 1</h3>
-                    <p>Descripción del producto 1</p>
-                    <p class="precio">$100</p>
-                    <button>Agregar al carrito</button>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/250x200?text=Producto+2" alt="Producto 2">
-                    <h3>Producto 2</h3>
-                    <p>Descripción del producto 2</p>
-                    <p class="precio">$150</p>
-                    <button>Agregar al carrito</button>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/250x200?text=Producto+3" alt="Producto 3">
-                    <h3>Producto 3</h3>
-                    <p>Descripción del producto 3</p>
-                    <p class="precio">$200</p>
-                    <button>Agregar al carrito</button>
+            <div class="productos-container">
+                <h2>Nuestras Soluciones</h2>
+                <p class="section-intro">Módulos especializados para cada área hospitalaria</p>
+                
+                <div class="productos-grid">
+                    <!-- PRODUCTO 1: KAIROS -->
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'%3E%3Crect width='250' height='200' fill='%23e8f4fd'/%3E%3Crect x='30' y='40' width='190' height='120' fill='none' stroke='%230066cc' stroke-width='2' rx='8'/%3E%3Ccircle cx='60' cy='60' r='8' fill='%230066cc'/%3E%3Ccircle cx='125' cy='60' r='8' fill='%230066cc' opacity='0.6'/%3E%3Ccircle cx='190' cy='60' r='8' fill='%230066cc' opacity='0.3'/%3E%3Cline x1='60' y1='70' x2='60' y2='130' stroke='%230066cc' stroke-width='2'/%3E%3Cline x1='125' y1='70' x2='125' y2='130' stroke='%230066cc' stroke-width='2' opacity='0.6'/%3E%3Cline x1='190' y1='70' x2='190' y2='130' stroke='%230066cc' stroke-width='2' opacity='0.3'/%3E%3C/svg%3E" alt="KAIROS - Trazabilidad Quirúrgica">
+                        </div>
+                        <h3>KAIROS</h3>
+                        <p class="producto-desc">Trazabilidad quirúrgica en tiempo real. Documentación digital de eventos perioperatorios, checklist OMS y análisis de flujos operativos.</p>
+                        <ul class="producto-features">
+                            <li>Dashboard operativo</li>
+                            <li>Eventos críticos automáticos</li>
+                            <li>Reportes de eficiencia</li>
+                            <li>Auditoría completa</li>
+                        </ul>
+                        <div class="producto-precio">
+                            <span class="precio">$8,500</span>
+                            <span class="periodo">/mes por institución</span>
+                        </div>
+                        <button class="btn-carrito">Agregar al carrito</button>
+                    </div>
+
+                    <!-- PRODUCTO 2: CORDIS -->
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'%3E%3Crect width='250' height='200' fill='%23fde8f0'/%3E%3Cpath d='M 125 60 Q 105 80 105 100 Q 105 130 125 150 Q 145 130 145 100 Q 145 80 125 60' fill='none' stroke='%23cc0066' stroke-width='2.5'/%3E%3Ccircle cx='125' cy='100' r='8' fill='%23cc0066'/%3E%3Cpath d='M 80 100 Q 60 90 50 80' stroke='%23cc0066' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M 170 100 Q 190 90 200 80' stroke='%23cc0066' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="CORDIS - Gestión de Urgencias">
+                        </div>
+                        <h3>CORDIS</h3>
+                        <p class="producto-desc">Gestión integral de urgencias y emergencias. Triaje digital, coordinación de recursos y seguimiento de pacientes críticos en tiempo real.</p>
+                        <ul class="producto-features">
+                            <li>Triaje automatizado</li>
+                            <li>Coordinación de recursos</li>
+                            <li>Alertas en tiempo real</li>
+                            <li>Integración con EHR</li>
+                        </ul>
+                        <div class="producto-precio">
+                            <span class="precio">$7,200</span>
+                            <span class="periodo">/mes por institución</span>
+                        </div>
+                        <button class="btn-carrito">Agregar al carrito</button>
+                    </div>
+
+                    <!-- PRODUCTO 3: GIA -->
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'%3E%3Crect width='250' height='200' fill='%23f0f8e8'/%3E%3Ccircle cx='125' cy='100' r='50' fill='none' stroke='%2300aa00' stroke-width='2'/%3E%3Ccircle cx='125' cy='100' r='35' fill='none' stroke='%2300aa00' stroke-width='1.5' opacity='0.6'/%3E%3Ccircle cx='115' cy='90' r='6' fill='%2300aa00'/%3E%3Ccircle cx='135' cy='90' r='6' fill='%2300aa00'/%3E%3Cpath d='M 110 130 Q 125 145 140 130' stroke='%2300aa00' stroke-width='2' fill='none'/%3E%3C/svg%3E" alt="GIA - Materno-Fetal">
+                        </div>
+                        <h3>GIA</h3>
+                        <p class="producto-desc">Gestión materno-fetal especializada. Seguimiento de embarazo, parto y puerperio con monitoreo de indicadores de salud materno-fetal.</p>
+                        <ul class="producto-features">
+                            <li>Control de embarazo</li>
+                            <li>Monitoreo fetal</li>
+                            <li>Registro de parto</li>
+                            <li>Protocolos OMS integrados</li>
+                        </ul>
+                        <div class="producto-precio">
+                            <span class="precio">$6,800</span>
+                            <span class="periodo">/mes por institución</span>
+                        </div>
+                        <button class="btn-carrito">Agregar al carrito</button>
+                    </div>
+
+                    <!-- PRODUCTO 4: REUM -->
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'%3E%3Crect width='250' height='200' fill='%23fff3e8'/%3E%3Cg stroke='%23ff8800' stroke-width='2' fill='none'%3E%3Ccircle cx='100' cy='80' r='25'/%3E%3Ccircle cx='150' cy='80' r='25'/%3E%3Ccircle cx='125' cy='130' r='25'/%3E%3Cline x1='118' y1='102' x2='107' y2='115'/%3E%3Cline x1='132' y1='102' x2='143' y2='115'/%3E%3C/g%3E%3C/svg%3E" alt="REUM - Reumatología">
+                        </div>
+                        <h3>REUM</h3>
+                        <p class="producto-desc">Sistema integral para seguimiento de pacientes reumáticos. Control de enfermedades autoinmunes con protocolos clínicos y análisis de respuesta a tratamiento.</p>
+                        <ul class="producto-features">
+                            <li>Seguimiento de patología</li>
+                            <li>Control farmacológico</li>
+                            <li>Análisis de remisión</li>
+                            <li>Protocolo EULAR integrado</li>
+                        </ul>
+                        <div class="producto-precio">
+                            <span class="precio">$5,500</span>
+                            <span class="periodo">/mes por institución</span>
+                        </div>
+                        <button class="btn-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- SECCIÓN DE RESEÑAS (CSS GRID) -->
         <section id="resenas" class="resenas">
-            <h2>Reseñas</h2>
-            <div class="grid-resenas">
-                <div class="card-resena">
-                    <p>"Muy bueno, recomiendo"</p>
-                    <p class="autor">- Juan</p>
-                </div>
-                <div class="card-resena">
-                    <p>"Excelente servicio"</p>
-                    <p class="autor">- María</p>
-                </div>
-                <div class="card-resena">
-                    <p>"Volvería a comprar"</p>
-                    <p class="autor">- Carlos</p>
+            <div class="resenas-container">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p class="section-intro">Testimonios de instituciones que mejoraron su gestión con Zenoxia</p>
+                
+                <div class="resenas-grid">
+                    <div class="resena-card">
+                        <div class="resena-header">
+                            <div class="resena-avatar">HC</div>
+                            <div class="resena-info">
+                                <h4>Hospital Central Buenos Aires</h4>
+                                <p class="resena-rol">Jefe de Quirófanos</p>
+                            </div>
+                        </div>
+                        <p class="resena-texto">"Con KAIROS redujimos los tiempos de espera entre quirófanos en un 35%. La visibilidad operativa es increíble — finalmente sabemos exactamente dónde está cada paciente."</p>
+                        <div class="resena-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+
+                    <div class="resena-card">
+                        <div class="resena-header">
+                            <div class="resena-avatar">HM</div>
+                            <div class="resena-info">
+                                <h4>Hospital Metropolitano</h4>
+                                <p class="resena-rol">Coordinador de Urgencias</p>
+                            </div>
+                        </div>
+                        <p class="resena-texto">"CORDIS cambió nuestro triaje. Pasamos de listas manuales a sistema automático. Ahora el 98% de pacientes se registra correctamente desde el inicio."</p>
+                        <div class="resena-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+
+                    <div class="resena-card">
+                        <div class="resena-header">
+                            <div class="resena-avatar">CM</div>
+                            <div class="resena-info">
+                                <h4>Clínica Maternidad San José</h4>
+                                <p class="resena-rol">Médico Obstetra</p>
+                            </div>
+                        </div>
+                        <p class="resena-texto">"GIA nos permite seguir a cada paciente desde el primer control hasta posparto. Los protocolos OMS integrados garantizan cumplimiento sin esfuerzo extra."</p>
+                        <div class="resena-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+
+                    <div class="resena-card">
+                        <div class="resena-header">
+                            <div class="resena-avatar">IR</div>
+                            <div class="resena-info">
+                                <h4>Instituto de Reumatología</h4>
+                                <p class="resena-rol">Médico Especialista</p>
+                            </div>
+                        </div>
+                        <p class="resena-texto">"REUM nos da claridad sobre remisión de enfermedades. El análisis de respuesta a tratamiento es preciso y ayuda enormemente en decisiones clínicas."</p>
+                        <div class="resena-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+
+                    <div class="resena-card">
+                        <div class="resena-header">
+                            <div class="resena-avatar">HN</div>
+                            <div class="resena-info">
+                                <h4>Hospital Nacional de Referencia</h4>
+                                <p class="resena-rol">Director de Calidad</p>
+                            </div>
+                        </div>
+                        <p class="resena-texto">"La auditoría es automática. Documentamos protocolos OMS en tiempo real. Pasamos inspecciones regulatorias sin problemas — antes era un caos."</p>
+                        <div class="resena-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+
+                    <div class="resena-card">
+                        <div class="resena-header">
+                            <div class="resena-avatar">HC2</div>
+                            <div class="resena-info">
+                                <h4>Hospital Comunitario del Sur</h4>
+                                <p class="resena-rol">Coordinadora Administrativa</p>
+                            </div>
+                        </div>
+                        <p class="resena-texto">"Implementar Zenoxia fue fácil. El equipo nos capacitó bien, y nuestro personal lo usa sin problemas. ROI en 4 meses — dinero bien invertido."</p>
+                        <div class="resena-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="video">
-            <h2>Video sobre nuestros productos</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                title="Video de productos" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </section>
-
+        <!-- SECCIÓN DE CONTACTO / FORMULARIO -->
         <section id="contacto" class="contacto">
-            <h2>Contacto</h2>
-            <form action="https://formspree.io/f/xeenzpya" method="POST">
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu email" required>
-                <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+            <div class="contacto-container">
+                <h2>Solicita una demostración</h2>
+                <p class="section-intro">Conoce cómo Zenoxia puede transformar tu institución</p>
+                
+                <div class="contacto-content">
+                    <div class="contacto-texto">
+                        <h3>¿Por qué elegir Zenoxia?</h3>
+                        <ul class="contacto-beneficios">
+                            <li><strong>Especializado:</strong> Software diseñado específicamente para cada área hospitalaria</li>
+                            <li><strong>Integración:</strong> Se conecta con sistemas existentes sin disrupciones</li>
+                            <li><strong>Soporte 24/7:</strong> Equipo técnico disponible para tu institución</li>
+                            <li><strong>Cumplimiento normativo:</strong> Todos los protocolos OMS incluidos</li>
+                            <li><strong>ROI comprobado:</strong> Mejora operativa medible en 90 días</li>
+                        </ul>
+                        <p style="margin-top: 2rem;"><strong>Contacta nuestro equipo de ventas para presupuesto personalizado.</strong></p>
+                    </div>
+
+                    <form class="contacto-form" action="https://formspree.io/f/xeenzpya" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="institucion">Institución</label>
+                            <input type="text" id="institucion" name="institucion" placeholder="Nombre del hospital/clínica">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interes">Producto de interés *</label>
+                            <select id="interes" name="interes" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="KAIROS">KAIROS - Quirófano</option>
+                                <option value="CORDIS">CORDIS - Urgencias</option>
+                                <option value="GIA">GIA - Materno-Fetal</option>
+                                <option value="REUM">REUM - Reumatología</option>
+                                <option value="Todos">Todos los módulos</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos sobre tu institución y tus necesidades..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">Enviar solicitud</button>
+                        <p class="form-note">Nos contactaremos en máximo 24 horas</p>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Zenoxia</h4>
+                    <p>Soluciones SaaS para optimizar procesos en salud.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#productos">KAIROS</a></li>
+                        <li><a href="#productos">CORDIS</a></li>
+                        <li><a href="#productos">GIA</a></li>
+                        <li><a href="#productos">REUM</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:info@zenoxia.com">info@zenoxia.com</a></li>
+                        <li><a href="tel:+541234567890">+54 (123) 456-7890</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zenoxia. Soluciones de software médico especializado. | Proyecto de curso Front-End</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
